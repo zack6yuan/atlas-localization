@@ -2,7 +2,6 @@
 from flask import Flask, request
 from flask_babel import Babel, _
 
-
 app = Flask(__name__)
 babel = Babel(app)
 
@@ -21,4 +20,4 @@ def index():
     return _("Hello, World!")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
